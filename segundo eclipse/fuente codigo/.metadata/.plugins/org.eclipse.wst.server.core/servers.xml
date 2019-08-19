@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v7.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="19">
+    <list key="modules" value0="EjercicioMapeo::org.eclipse.jst.jee.server:EjercicioMapeo::jst.web::3.0" value1="ClaseDosJSP::org.eclipse.jst.jee.server:ClaseDosJSP::jst.web::3.0" value2="ClaseDos::org.eclipse.jst.jee.server:ClaseDos::jst.web::3.0" value3="TareaMapeo::org.eclipse.jst.jee.server:TareaMapeo::jst.web::3.0" value4="ClaseTres::org.eclipse.jst.jee.server:ClaseTres::jst.web::3.0" value5="Clase5::org.eclipse.jst.jee.server:Clase5::jst.web::3.0" value6="Clase1JavaWeb::org.eclipse.jst.jee.server:Clase1JavaWeb::jst.web::2.5" value7="Clase4::org.eclipse.jst.jee.server:Clase4::jst.web::3.0" value8="ClaseWebEjercicioDps::org.eclipse.jst.jee.server:ClaseWebEjercicioDps::jst.web::3.0"/>
+  </server>
+</servers>

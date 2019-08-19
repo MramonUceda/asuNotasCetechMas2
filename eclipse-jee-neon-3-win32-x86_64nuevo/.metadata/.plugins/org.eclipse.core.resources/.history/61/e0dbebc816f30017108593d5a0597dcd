@@ -1,0 +1,145 @@
+package mx.com.cetech.formularioCetech.controlador;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Map;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.swing.JOptionPane;
+
+import mx.com.cetech.formularioCetech.bean.Alumno;
+import mx.com.cetech.formularioCetech.dao.AlumnoDAO;
+
+/**
+ * Servlet implementation class ValidaFormulario
+ */
+@WebServlet("/ValidaFormulario")
+public class ValidaFormulario extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ValidaFormulario() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("Felicidades has mapeado bien!");
+		System.out.println("nombre: " + request.getParameter("nombre"));
+		System.out.println("paterno: " + request.getParameter("paterno"));
+		System.out.println("materno: " + request.getParameter("materno"));
+		System.out.println("correo: " + request.getParameter("correo"));
+		System.out.println("curso: " + request.getParameter("curso"));
+		System.out.println("miCombo: " + request.getParameter("miCombo"));
+		String generoAux=request.getParameter("miCombo");
+		System.out.println("fechaNacimiento: " + request.getParameter("fechaNacimiento"));
+		System.out.println("edad: " + request.getParameter("edad"));
+		System.out.println("celular: " + request.getParameter("celular"));
+		System.out.println("direccion: " + request.getParameter("direccion"));
+		System.out.println("ocupacion: " + request.getParameter("ocupacion"));
+		System.out.println("Seleccion: " + request.getParameter("q3"));
+		System.out.println("miCombo2: " + request.getParameter("miCombo2"));
+		String nivelAux=request.getParameter("miCombo2");
+		System.out.println("escuela: " + request.getParameter("escuela"));
+		System.out.println("q3: " + request.getParameter("q3"));
+		System.out.println("expectativas: " + request.getParameter("expectativas"));
+		System.out.println("otroCuros: " + request.getParameter("otroCurso"));
+		
+		System.out.println("la fecha es: "+ new Date());
+		
+		Alumno alumno = new Alumno();
+		AlumnoDAO dao = new AlumnoDAO();
+		String genero=null;
+		String nivel=null;
+//		String fechaRegistro;
+//		String fechaActualizacion;
+//		
+//		SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+//		
+//		fechaRegistro=dateFormat.format(new Date());
+//		fechaActualizacion=fechaRegistro;
+		
+		//Para genero
+		if(generoAux.equals("#588c75")){
+			genero="m";
+		}else{
+			genero="f";
+		}
+		System.out.println("valor de genero: "+genero);
+		
+		//para nivel academico
+		if(nivelAux.equals("#588c75")){
+			nivel="primaria";
+		}
+		if(nivelAux.equals("#b0c47f")){
+			nivel="secundaria";
+		}
+		if(nivelAux.equals("#f3e395")){
+			nivel="preparatoria";
+		}
+		if(nivelAux.equals("#f3ae73")){
+			nivel="universidad";
+		}
+		if(nivelAux.equals("#da645a")){
+			nivel="posgrado";
+		}
+		
+		alumno.setNombre(request.getParameter("nombre"));
+		alumno.setApellidoPaterno(request.getParameter("paterno"));
+		alumno.setApellidoMaterno(request.getParameter("materno"));
+		alumno.setCorreoElectronico(request.getParameter("correo"));
+		alumno.setCurso(request.getParameter("curso"));
+		alumno.setSexo(genero);//CAMBIA PQ VIENE CON CODIGO DE COLOR
+		alumno.setFechaNacimiento(request.getParameter("fechaNacimiento"));
+		alumno.setEdad(request.getParameter("edad"));
+		alumno.setTelefono(request.getParameter("celular"));
+		alumno.setDireccion(request.getParameter("direccion"));
+		alumno.setOcupacion(request.getParameter("ocupacion"));
+		alumno.setNivelAcademico(nivel);//CAMBIA PQ VIENE CON CODIGO DE COLOR
+		alumno.setEscuela(request.getParameter("escuela"));
+		alumno.setMedio(request.getParameter("q3"));
+		alumno.setExpectativas(request.getParameter("expectativas"));
+		alumno.setOtroCurso(request.getParameter("otroCurso"));
+//		alumno.setFechaRegistro(fechaRegistro);
+//		alumno.setFechaActualizacion(fechaActualizacion);
+		
+		try {
+			Map<String, String> returnMap=dao.insertar(alumno);
+			request.setAttribute("correcto", returnMap.get("correcto"));
+			request.setAttribute("mensajeGeneral", returnMap.get("mensajeGeneral"));
+		}catch(SQLException e) {
+			// TODO Auto-generated catch block
+			//e.printStackTrace();
+			System.out.println("Error de comunicacion con la base de datos");
+			JOptionPane.showMessageDialog(null, "Error de comunicacion con la base de datos.\nFavor de contactar al administrador del sistema o intente mas tarde.");
+		}
+		
+//		request.setAttribute("mensaje", "Registro realizado correctamente");
+		
+		request.getRequestDispatcher("index.jsp").forward(request, response);
+//	}catch(Exception ex){
+//		System.out.println(ex.getMessage());
+//	}finally{
+//		baseDatos.cerrarConexion();
+//	}
+	}
+
+}

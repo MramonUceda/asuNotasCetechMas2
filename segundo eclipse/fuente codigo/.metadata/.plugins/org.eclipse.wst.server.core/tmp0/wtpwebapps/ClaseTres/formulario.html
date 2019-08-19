@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="http://cetech.com.mx" method="post" >
+		Introduce tu Lenguaje Fav.
+		<input type="text" maxlength="20" size="20" name="lenguaje"><br/><br/>
+		¿Cuando tiempo llevas programando en el?<br/>
+		<input type="radio" name="tiempo" value="0-2" checked="checked">Menos de dos meses <br/>
+		<input type="radio" name="tiempo" value="2-5" >De dos a cinco meses <br/>
+		<input type="radio" name="tiempo" value="5-" >Maas de cinco meses <br/><br/><br/><br/>
+		¿En que entornos haz usado ese lengueje?
+		<input type="checkbox" name="entornos" value="web" checked="checked">Web <br/>
+		<input type="checkbox" name="entornos" value="movil">Movil<br/>
+		<input type="checkbox" name="entornos" value="consola">Consola <br/><br/><br/>
+		<input type="button" name="boton" value="no hace nada"><br/><br/>
+		¿Cuantos lenguajes de programacion haz usado ademas de JAVA?
+		<select>
+			<option value="uno">Uno</option>
+			<option value="dos">Dos</option>
+			<option value="tres">Tres</option>
+		</select><br/>
+		¿En cuantos cursos de CETECH haz participado?
+		<select size=3>
+			<option value="uno">Uno</option>
+			<option value="dos">Dos</option>
+			<option value="tres">Tres</option>
+		</select><br/><br/>
+		¿Quieres introducir algun comentario adicional?
+		<textarea name="comentario" rows="10" cols="20">Comentario</textarea>
+		<br/>
+		<button>Enviar formulario</button>
+	
+	</form>
+	
+</body>
+</html>

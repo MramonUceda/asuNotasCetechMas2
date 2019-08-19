@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Clase1JavaWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <!-- paso 2: Se registra el servlet, servlet name solo es para identificar mi servlet -->
+  <servlet>
+  		<servlet-name>greeting servlet</servlet-name>
+  		<!-- se registra la clase (click derecho/copy qualified name en la clase origen en este caso GreetingServlet  -->
+  		<servlet-class>mx.com.Cetech.JavaWeb.Mario.GreetingServlet</servlet-class>
+  </servlet>
+  <!-- tercer paso mapearlo; solo necesita el nombre del servlet y la url que estará mappeadhacía él -->
+  <servlet-mapping>
+ 	 <!-- debe ser el mismo que se registrado en el servlet  -->
+  	<servlet-name>greeting servlet</servlet-name>
+  	<!-- es como voy acceder a el; el do no hace solo es por nomeclatura ya que viene de hacer y no tiene mayor impacto -->
+  	<url-pattern>/greeting.do</url-pattern>
+  </servlet-mapping>
+</web-app>

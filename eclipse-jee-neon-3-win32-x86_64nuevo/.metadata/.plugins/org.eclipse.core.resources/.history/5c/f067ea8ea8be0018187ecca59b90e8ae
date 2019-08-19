@@ -1,0 +1,13 @@
+package mx.com.cetech.encriptar;
+
+import javax.swing.JFrame;
+
+public class Grafico  {
+	public static void main(String[] args) {
+		
+	}
+	public ventanFrame(String a){
+		JFrame ventanaM = new JFrame(a);
+	}
+	
+}

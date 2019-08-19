@@ -1,0 +1,12 @@
+package mx.com.cetech.encriptar;
+
+public class Encriptar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String palabra = "Hola Mundo";
+		
+
+	}
+
+}

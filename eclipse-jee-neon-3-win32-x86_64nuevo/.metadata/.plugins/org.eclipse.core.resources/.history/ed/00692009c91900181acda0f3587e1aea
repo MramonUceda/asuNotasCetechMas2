@@ -1,0 +1,91 @@
+<html>
+
+<head>
+<!-- imporat jquery -->
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript"> 
+		function validar() {
+			var someVar = null;
+			someVar = document.getElementById("idCriterio").value;
+			console.log(someVar);
+			if(someVar.length<3){
+				var divMessage = document.getElementById("messageDiv");
+				divMessage.innerHTML = "Debes de ingresar al menos 3 caracteres";
+				return false;
+			}
+			
+		}
+		
+		function ajaxSubmitExample(){
+			var validation = validar();
+			if(validation != false){
+				var uriGet = document.getElementById("idCriterio").value;
+				//para llamar la libreria jqueri es con ek signo de $ y estamos llamando a la funcion get
+					$.get("encontrar.htm?description="+uriGet,function(data,status){
+						document.getElementById("messageDiv").innerHTML=status+"<br/>"+data;
+					});
+			}
+		}
+		
+		function imprimirJsons(){
+			//en javascript para  declarar un varible es:
+				
+			var valor = document.getElementById("idCriterio").value;
+			//1er atributo: la URL a consultar(peticion GET)
+			//2do atributo: la funcion (instrucciones) que se realizan
+			$.get("encontrar.htm?description="+valor, function(data, status ){
+				console.log("Status:"+status);
+				console.log( JSON.stringify( { data } ) );
+				crearTabla('jsonResult');
+				var result = JSON.parse(JSON.stringify(data));
+				//iterando
+				var elementCount = 0;
+				//iterador y en donde se va a guardar
+				for(var iterator in result ){
+					addRow(elementCount,'jsonResult');
+					addCell(0,elementCount,'jsonResult',result[iterator].id);
+					addCell(1,elementCount,'jsonResult',result[iterator].description);
+					elementCount++;
+				}
+			} );
+		}
+		
+		//resivirá una variable de nombre id tabla
+		function crearTabla(idTabla){
+			var divTabla = document.getElementById('divTabla');
+			divTabla.innerHTML ="<table id='"+idTabla+"'></table>";
+		}
+		
+		//
+		function addRow(index,idTabla){
+			var tabla = document.getElementById(idTaabla);
+			tabla.insertRow(index);
+		}
+		
+		function addCell(cellIndex,rowIndex, idTabla, value){
+			var tabla = document.getElementById(idTabla);
+			var row = tabla.row[rowIndex];
+			var cell = row.insertCell(cellIndex);
+			cell.innerHTML = value;
+		}
+	</script>
+</head>
+
+<body>
+	<div id="messageDiv"
+		style="background: red; color: white; border-color: black;"></div>
+	<form action="encontrar.htm" method="get">
+		<label>Criterio: </label> <input id="idCriterio" type="text"
+			name="description" required="required" /> <br /> <input type="submit"
+			value="Buscar" onclick="return validar();">
+	</form>
+	<button onclick="ajaxSubmitExample();">Ajax Submit</button>
+	<button onclick="imprimirJsons();">Imprimir Json</button>
+	
+	<div id="divTabla"></div>
+
+</body>
+
+
+</html>

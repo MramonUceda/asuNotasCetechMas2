@@ -1,0 +1,12 @@
+127.0.0.1 - - [17/May/2018:00:05:51 -0500] "GET / HTTP/1.1" 404 1006
+0:0:0:0:0:0:0:1 - - [17/May/2018:00:05:55 -0500] "GET /SistemaCetech/ HTTP/1.1" 200 615
+0:0:0:0:0:0:0:1 - - [17/May/2018:00:06:02 -0500] "POST /SistemaCetech/ValidaLoggin HTTP/1.1" 500 1620
+0:0:0:0:0:0:0:1 - - [17/May/2018:00:09:44 -0500] "POST /SistemaCetech/ValidaLoggin HTTP/1.1" 500 1620
+0:0:0:0:0:0:0:1 - - [17/May/2018:00:09:54 -0500] "POST /SistemaCetech/ValidaLoggin HTTP/1.1" 500 1620
+127.0.0.1 - - [17/May/2018:00:15:57 -0500] "GET / HTTP/1.1" 404 1006
+127.0.0.1 - - [17/May/2018:00:21:56 -0500] "GET / HTTP/1.1" 404 1006
+0:0:0:0:0:0:0:1 - - [17/May/2018:00:21:58 -0500] "GET /SistemaCetech/ HTTP/1.1" 200 615
+0:0:0:0:0:0:0:1 - - [17/May/2018:00:22:05 -0500] "POST /SistemaCetech/ValidaLoggin HTTP/1.1" 500 1620
+0:0:0:0:0:0:0:1 - - [17/May/2018:00:22:56 -0500] "POST /SistemaCetech/ValidaLoggin HTTP/1.1" 500 1620
+0:0:0:0:0:0:0:1 - - [17/May/2018:00:28:03 -0500] "GET /SistemaCetech/ HTTP/1.1" 200 615
+0:0:0:0:0:0:0:1 - - [17/May/2018:00:28:21 -0500] "POST /SistemaCetech/ValidaLoggin HTTP/1.1" 500 1620

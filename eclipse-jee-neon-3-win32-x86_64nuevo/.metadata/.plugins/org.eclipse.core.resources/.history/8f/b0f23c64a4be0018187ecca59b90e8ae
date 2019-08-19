@@ -1,0 +1,22 @@
+package mx.com.cetech.encriptar;
+
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
+
+public class Encriptar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+		
+	}
+	public static String cifrar (String palabra){
+		Base64.Encoder encoder = Base64.getEncoder();
+		String b = encoder.encodeToString(palabra.getBytes(StandardCharsets.UTF_8));
+		return  b;
+	}
+	public static String desifrar (String palabra){
+		
+	}
+
+}

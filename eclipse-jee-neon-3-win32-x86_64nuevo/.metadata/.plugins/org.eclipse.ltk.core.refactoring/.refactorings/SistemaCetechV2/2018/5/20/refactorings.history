@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;mx.com.cetech.formularioCetech.dao.AsistenciaDAO.insertAsistencia().rs&apos; in &apos;mx.com.cetech.formularioCetech.dao.AsistenciaDAO.insertAsistencia()&apos; to field&#x0D;&#x0A;- Original project: &apos;SistemaCetechV2&apos;&#x0D;&#x0A;- Original element: &apos;mx.com.cetech.formularioCetech.dao.AsistenciaDAO.insertAsistencia().rs&apos;&#x0D;&#x0A;- Field name: &apos;rs2&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" description="Convert local variable &apos;rs&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;mx.com.cetech.formularioCetech.dao{AsistenciaDAO.java" name="rs2" selection="886 20" stamp="1526446450324" static="false" version="1.0" visibility="2"/>
+</session>

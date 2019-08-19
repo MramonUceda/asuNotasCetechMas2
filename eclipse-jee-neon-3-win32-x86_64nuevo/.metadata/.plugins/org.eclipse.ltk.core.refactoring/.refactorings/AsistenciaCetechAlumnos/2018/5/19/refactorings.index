@@ -1,0 +1,16 @@
+1525662954620	Delete element
+1525662958936	Delete element
+1525663060722	Delete element
+1525733846347	Copy package
+1525733852852	Delete element
+1525734029135	Delete element
+1525734634073	Rename type 'AlumnoBean'
+1525736893587	Delete element
+1525737220253	Delete element
+1525741255082	Delete element
+1525837404266	Convert local variable 'usuario' to field
+1525840084639	Convert local variable 'ps' to field
+1525840540426	Convert local variable 'rs' to field
+1525840555546	Convert local variable 'bd' to field
+1525840571363	Extract local variable 'dbConnection2'
+1525840587565	Convert local variable 'dbConnection2' to field

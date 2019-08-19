@@ -1,0 +1,27 @@
+package mx.com.cetech.encriptar;
+
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Grafico extends JFrame {
+
+	@Override
+	public void setDefaultCloseOperation(int arg0) {
+		// TODO Auto-generated method stub
+		super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+	@Override
+	public void setSize(Dimension arg0) {
+		// TODO Auto-generated method stub
+		super.setSize(290,150);
+	}
+	 @Override
+	public void setVisible(boolean arg0) {
+		// TODO Auto-generated method stub
+		super.setVisible(true);
+	}
+	
+}

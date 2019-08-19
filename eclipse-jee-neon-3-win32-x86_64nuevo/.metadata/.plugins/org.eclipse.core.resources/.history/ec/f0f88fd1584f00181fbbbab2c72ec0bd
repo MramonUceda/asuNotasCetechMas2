@@ -1,0 +1,72 @@
+package mx.com.cetech.clase4.dao;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
+
+import mx.com.cetech.clase4.util.BaseDatos;
+import mx.com.cetech.clase4.Alumno.*;
+import mx.com.cetech.clase4.controlador.ValidaLogin;
+
+
+public class AlumnoDAO {
+	BaseDatos db = new BaseDatos(); // CLASE QUE HARA LA CONEXION HACIA LA BASE
+									// DE DATOS
+	
+	ValidaLogin vl = new ValidaLogin();
+	Connection dbConnection = null;
+	PreparedStatement ps = null;
+	ResultSet rs = null;
+	String query = null;
+
+	public Map<String, String> insertar(Alumno alumno) throws SQLException {
+		Map<String, String> returnMap = new HashMap<String, String>();
+		query = "insert into asistencia"
+				+ "(idasistencia, fechaAsistencia, gurpo, estudiantes_idestudiantes)"
+				+ " values " + "(?, ?, ?, ?)";
+		
+
+		dbConnection = db.getDBConnection();
+		try {
+			ps = (PreparedStatement) dbConnection.prepareStatement(query); // SE
+																				// CARGA
+																				// EL
+																				// QUERY
+			// ps.setString(1, usr);
+			// ps.setString(2, contrasenia);
+			
+			System.out.println("Prueba de recibir Variable en el DAO 1: " + );
+
+
+			ps.setString(1, alumno.getIdasistencia());
+			ps.setString(2, alumno.getFechaAsistencia());
+			ps.setString(3, alumno.getGurpo());
+			ps.setString(3, alumno.getEstudiantes_idestudiantes());
+
+
+
+
+			System.out.println(query);
+			ps.execute();
+
+			returnMap.put("correcto", "Si");
+			returnMap.put("mensajeGeneral", "Registro realizado correctamente<br>");
+		} catch (SQLException e) {
+			e.printStackTrace();
+			System.out.println("Error en el Query");
+			returnMap.put("correcto", "No");
+			returnMap.put("mensajeGeneral", "Registro NO se realizo !!!<br>");
+		} finally {
+			if (ps != null) {
+				ps.close();
+			}
+			if (dbConnection != null) {
+				dbConnection.close();
+			}
+		}
+		return returnMap;
+	}
+}
+

@@ -1,0 +1,12 @@
+<!-- Los formularios se emplean para recoger datos del usuario en una pagina web y enviarlos al servidor.HTML y HTTP
+	se encargan sólo de enviarlos al servidor, pero no definen que se hace ni proporcionan ningún mecanismo para hacer algo con ellos
+	 -->
+	 <!-- Tiene el action ruta programa: Especifica el programa en el servidor que se va a encargar de procesar la infomación enviada por el 
+	 formulario -->
+	 <!-- POST: envia los datos dentro del cuerpo de la petición. el metodo GET: añade los argumentos del formulario a la URL especificada en el 
+	 atributo action, utilizando como separador de las distintas piezas de infomación ? -->
+	 <!-- HTTP: para desarrolar aplicaciones web utilizamos el protocolo para transferir recursos que componen una WEB, el hypertext transfer protocol(protocolo de tranferencia de hypertexto ó HTTP)
+	 es empleado para este fin. Es un protocolo orientado a las transacciones que sigue un esquema de petición respuesta entre un cliente y un servidor.El cliente efectua
+	 la petición habitualmente en un navegador web que se donomina user agent.La infomación
+	 transmitida se denomina recurso y se identifica mediante un localizador con informes de recursos alias URL -->
+	 

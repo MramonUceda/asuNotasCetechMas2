@@ -1,0 +1,4 @@
+127.0.0.1 - - [09/Nov/2017:12:54:57 -0600] "GET / HTTP/1.1" 404 961
+0:0:0:0:0:0:0:1 - - [09/Nov/2017:12:55:02 -0600] "GET /ClaseTres/ HTTP/1.1" 200 787
+0:0:0:0:0:0:0:1 - - [09/Nov/2017:12:55:02 -0600] "GET /ClaseTres/css/style.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [09/Nov/2017:13:16:43 -0600] "GET /ClaseTres/Patito?usuario=r3tt5&password=5t HTTP/1.1" 200 -

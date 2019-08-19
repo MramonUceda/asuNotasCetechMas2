@@ -1,0 +1,26 @@
+Clase
+
+CatOcupation 
+
+-id- Integer
+-description- String
+
++getseters
++setters
++toString
+
+
+*****************************************
+Como se define una clase e un jason
+
+{
+	attributo: valor,
+	n: n..
+}
+
+
+********************************************
+{
+	id: number,
+	description: String
+}

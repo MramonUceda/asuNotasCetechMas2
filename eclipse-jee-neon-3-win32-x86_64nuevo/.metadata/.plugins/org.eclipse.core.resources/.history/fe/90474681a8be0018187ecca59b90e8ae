@@ -1,0 +1,12 @@
+package mx.com.cetech.encriptar;
+
+
+public class Grafico  {
+	public static void main(String[] args) {
+		
+	}
+	public ventanFrame(String a){
+		
+	}
+	
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="com.sun.istack.internal.logging.Logger"/>
+<fullyQualifiedTypeName name="org.apache.naming.java.javaURLContextFactory"/>
+<fullyQualifiedTypeName name="mx.com.Cetech.javaWeb.Clase4.DataBaseConnectionFactory"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="javax.sql.StatementEvent"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+</qualifiedTypeNameHistroy>

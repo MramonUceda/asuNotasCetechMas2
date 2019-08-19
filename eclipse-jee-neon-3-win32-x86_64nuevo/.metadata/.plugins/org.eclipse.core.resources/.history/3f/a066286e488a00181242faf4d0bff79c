@@ -1,0 +1,37 @@
+package mx.com.cetech.clase4.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import mx.com.cetech.clase4.util.BaseDatos;
+
+public class UsuarioDao2 {
+	
+	 ResultSet rs;
+	 BaseDatos bd;
+	 Connection dbConnection2;
+
+	public void Insertar (String usr) throws SQLException{
+		Connection dbConnection = null;
+		bd = new BaseDatos();
+		PreparedStatement ps = null;
+		rs = null;
+		String insert ="insert into asistencia (idestudiante) values (?)";
+		
+		try {
+			dbConnection2 = dbConnection;
+			ps = dbConnection2.prepareStatement(insert);
+			//preparar el query
+			ps.setString(1, usr);
+			
+			rs = ps.executeQuery();
+
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+}

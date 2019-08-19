@@ -1,0 +1,46 @@
+<html>
+
+<head>
+<!-- imporat jquery -->
+	<script type="text/javascript" src="http//:code.jquery.com/jquery-3.3.1.min.js"> 
+		function validar() {
+			var someVar = null;
+			someVar = document.getElementById("idCriterio").value;
+			console.log(someVar);
+			if(someVar.length<3){
+				var divMessage = document.getElementById("messageDiv");
+				divMessage.innerHTML = "Debes de ingresar al menos 3 caracteres";
+				return false;
+			}
+			
+		}
+		
+		function ajaxSubmitExample(){
+			var validation = validar();
+			if(validation != false){
+				var uriGet = document.getElementById("idCriterio").value;
+				//para llamar la libreria jqueri es con ek signo de $ y estamos llamando a la funcion get
+					$.get("encontrar.htm?description="+uriGet,funtion(data,status){
+						document.getElementById("messageDiv").innerHTML=status+"</br>"+data;
+					});
+			}
+		}
+		
+		
+	</script>
+</head>
+
+<body>
+	<div id="messageDiv" style="background: red; color: white;border-color: black;"></div>
+	<form action="encontrar.htm" method="get">
+		<label>Criterio: </label>
+		<input id="idCriterio" type="text" name="description" required="required"/>
+		<br/>
+		<input type="submit" value="Buscar" onclick="return validar();" >
+	</form>
+	<button onclick="ajaxSubmitExample();" >Ajax Submit</button>
+
+</body>
+
+
+</html>

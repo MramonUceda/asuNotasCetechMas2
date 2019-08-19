@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Clase5</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Dar de alta el servlet -->
+  <servlet>
+  	<servlet-name>ServletDB</servlet-name> <!-- el que yo quiero pero unico dentro de la aplicacion -->
+  	<servlet-class>mx.com.Cetech.javaWeb.servlet.DBServlet</servlet-class><!-- Nombre de la clase completa -->
+  </servlet>
+  <!-- Mappear el servlet -->
+  <servlet-mapping>
+  	<servlet-name>SerlvetDB</servlet-name><!-- El nombre que se define en la alta del servlet -->
+  	<url-pattern>/index.html</url-pattern><!-- como se accedio mediante la web(url) -->
+  </servlet-mapping>
+  
+</web-app>

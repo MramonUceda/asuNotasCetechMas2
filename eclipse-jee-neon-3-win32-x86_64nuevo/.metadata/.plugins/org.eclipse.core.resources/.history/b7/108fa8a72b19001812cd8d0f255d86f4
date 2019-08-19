@@ -1,0 +1,18 @@
+package mx.com.Cetech.TrabajosPorAparte;
+
+import java.util.Scanner;
+
+public class EsPrimo {
+
+	public static void main(String[] args) {
+		
+		int n1;
+
+		Scanner sr = new Scanner(System.in);
+		System.out.println("Ingres un numero");
+		n1 = sr.nextInt();
+		
+
+	}
+
+}

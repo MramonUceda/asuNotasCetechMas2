@@ -1,0 +1,24 @@
+package mx.com.cetech.encriptar;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Grafico  {
+	public static void main(String[] args) {
+		Grafico grafico = new Grafico("titulo");
+		
+	}
+	public Grafico(String a){
+		JFrame ventanaM = new JFrame(a);
+		ventanaM.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		ventanaM.setSize(500, 200);
+		ventanaM.setVisible(true);
+		
+		JButton button = new JButton();
+		button.setText("Enviar");
+		button.setBounds(130, 130, 150, 160);
+		
+		
+	}
+	
+}

@@ -1,0 +1,18 @@
+@CHARSET "ISO-8859-1";
+input{
+	border-color: #f11b1b;
+	font-size: 18px;
+	color: #38b7f7;
+}
+.requerido{
+	background-color: #000000;
+	font-style: italic;
+	font-family: courier;
+}
+h1{
+	font-size: xx-large;
+	text-transform: uppercase;	
+}
+body{
+	background-color: #6acb2a;
+}

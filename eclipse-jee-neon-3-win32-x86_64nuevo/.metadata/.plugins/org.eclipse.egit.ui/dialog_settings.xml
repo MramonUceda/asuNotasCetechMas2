@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/MramonUceda/SistemaCetech.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+	</list>
+	<section name="GitCommitMessageComponent">
+		<list key="D:\SistemaCetech\.git">
+			<item value="false"/>
+			<item value="Mario Ramón Uceda &lt;ucedamario@hotmail.com&gt;"/>
+			<item value="Aún no se soluciona el problema de sleccionar en que curso vas..."/>
+			<item value="Mario Ramón Uceda &lt;ucedamario@hotmail.com&gt;"/>
+			<item value="ae87bfdadafad4214447337ecad2ebca6b42aaf1"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="200,200" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="200,200" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

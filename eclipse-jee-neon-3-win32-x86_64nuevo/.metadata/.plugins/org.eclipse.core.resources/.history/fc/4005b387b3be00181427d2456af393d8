@@ -1,0 +1,85 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Paneles extends JPanel implements ActionListener{
+//una forma de agregar texto con coordenadas
+@Override
+protected void paintComponent(Graphics g) {
+	// TODO Auto-generated method stub
+	super.paintComponent(g);
+	g.drawString("Dar clic para calcular area", 200, 150);
+}
+
+//Creando componenestes que agregaremos despues
+//Jlabel solo es texto, JTextFiel son cuadros de texto y botones
+JLabel textoAlto = new JLabel("Palabra a Encriptar: ");
+JButton botonCuadrado = new JButton("Encriptar");
+//JLabel textoAncho = new JLabel("Palabra Encriptada: ");
+JLabel textoRadio = new JLabel("Valor de Radio: ");
+JLabel textoResultado= new JLabel();
+
+JButton botonCirculo = new JButton("circulo");
+JTextField campoAlto= new JTextField(40);
+JTextField campoAncho= new JTextField(10);
+JTextField campoRadio= new JTextField(10);
+
+public Paneles() {
+	//estamos en el contructor de paneles para cuando se cree un objeto se cree con los siguientes elementos
+	
+	//agregando campos de texto
+	add(textoAlto);
+	add(campoAlto);
+	add(textoAncho);
+	add(campoAncho);
+	//agregando botones
+	add(botonCuadrado);
+	
+	//agregamos para el circulo
+	add(textoRadio);
+	add(campoRadio);
+	add(botonCirculo);
+	
+	add(textoResultado);
+	
+	
+	//escucahndo el clic de los botones
+	botonCuadrado.addActionListener(this);
+	botonCirculo.addActionListener(this);
+	
+	
+}
+@Override
+public void actionPerformed(ActionEvent e) {
+	Object clicBotones=e.getSource();
+	if (clicBotones==botonCuadrado) {
+		//verificar que trae valores de los cuadros de texto
+		System.out.println(campoAlto.getText());
+		System.out.println(campoAncho.getText());
+		
+		//obtenemos los valores de las cajas de texto y lo convertimos en float porque llegan en String
+		float numAlto=Float.parseFloat(campoAlto.getText());
+		float numAncho=Float.parseFloat(campoAncho.getText());
+		float areaRectangulo=numAlto*numAncho;
+		setBackground(Color.GREEN);// para cambiar color de fondo
+		textoResultado.setText("El area del rectangulo es: "+areaRectangulo);//seteamos el valor en el componente
+	}
+	if (clicBotones==botonCirculo) {
+		//verificar que trae valores de los cuadros de texto
+		System.out.println(campoRadio.getText());
+		
+		float numRadio=Float.parseFloat(campoRadio.getText());
+		double areaCirculo=Math.PI*Math.pow(numRadio, 2);
+		setBackground(Color.RED);
+		textoResultado.setText("El area del circulo es: "+areaCirculo);
+	}
+	
+	
+}
+}

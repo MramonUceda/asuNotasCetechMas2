@@ -1,0 +1,16 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.wst.server,Tomcat\ v8.5\ Server\ at\ localhost/name=Tomcat v8.5 Server at localhost
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Encriptar,org.eclipse.launchbar.core.descriptorType.default\:Grafico,org.eclipse.launchbar.core.descriptorType.default\:Areas,org.eclipse.launchbar.core.descriptorType.default\:Tomcat v8.5 Server at localhost,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:AsistenciaCetechAlumnos,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:Clase6,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:Clase7Tomee,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:Clase8,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:EjercicioPrueba,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:JavaMailPrueba,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:SistemaCetech,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:SistemaCetechV2,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:AppWebJee,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:Clase5,org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:EjercicioBasicoDeLog4j
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:Areas/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Encriptar/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Tomcat\ v8.5\ Server\ at\ localhost/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:AppWebJee/activeLaunchMode=run
+org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:AppWebJee/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.wst.server\:Tomcat v8.5 Server at localhost
+org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:AsistenciaCetechAlumnos/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.wst.server\:Tomcat v8.5 Server at localhost
+org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:Clase6/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.wst.server\:Tomcat v8.5 Server at localhost
+org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:EjercicioBasicoDeLog4j/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.wst.server\:Tomcat v8.5 Server at localhost
+org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:SistemaCetech/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.wst.server\:Tomcat v8.5 Server at localhost
+org.jboss.tools.wtp.server.launchbar.ModuleDescriptorType\:SistemaCetechV2/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.wst.server\:Tomcat v8.5 Server at localhost

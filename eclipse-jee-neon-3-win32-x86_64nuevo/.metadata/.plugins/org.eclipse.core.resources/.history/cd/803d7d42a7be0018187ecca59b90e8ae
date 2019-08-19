@@ -1,0 +1,7 @@
+package mx.com.cetech.encriptar;
+
+import javax.swing.JFrame;
+
+public class Grafico extends JFrame {
+
+}

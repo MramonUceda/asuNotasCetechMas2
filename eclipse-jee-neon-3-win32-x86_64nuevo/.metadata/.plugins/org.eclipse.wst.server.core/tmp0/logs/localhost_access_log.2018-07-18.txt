@@ -1,0 +1,6 @@
+127.0.0.1 - - [18/Jul/2018:00:03:13 -0500] "GET / HTTP/1.1" 404 1006
+0:0:0:0:0:0:0:1 - - [18/Jul/2018:00:03:21 -0500] "GET /AsistenciaCetechAlumnos/ HTTP/1.1" 200 637
+0:0:0:0:0:0:0:1 - - [18/Jul/2018:00:03:21 -0500] "GET /AsistenciaCetechAlumnos/css/style.css HTTP/1.1" 200 2515
+0:0:0:0:0:0:0:1 - - [18/Jul/2018:00:03:49 -0500] "GET /AsistenciaCetechAlumnos/ValidaLogin?usuario=150135&password=1234 HTTP/1.1" 200 168
+0:0:0:0:0:0:0:1 - - [18/Jul/2018:00:09:01 -0500] "GET /AsistenciaCetechAlumnos/ValidaLogin?usuario=150135&password=1234 HTTP/1.1" 200 168
+0:0:0:0:0:0:0:1 - - [18/Jul/2018:00:09:31 -0500] "GET /AsistenciaCetechAlumnos/ValidaLogin?usuario=150005&password=1234 HTTP/1.1" 200 168
