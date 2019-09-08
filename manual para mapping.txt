@@ -1,0 +1,9 @@
+1.- Crear dynamic web proyect
+1.1.-Generar XML en Web Info
+2.-Crea pagina ya sea jsp o html(webcontent)
+2.1.-Crear etiqueta form (el form sirvre para irte a otra pagina o irte a un serlet) y input
+3.-crear paquete y servlet servlet.java (controlador)
+3.1.-Quitar la anoración @ del servlet y quitar el nombre.
+4.-Mapeo en XML(web-inf)
+5.- En la pagina web agregar el action a tu etiqueta form
+6.-configurar el servlet para que te direccione o haga el logg(es la acción que hará).
